@@ -13,15 +13,15 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header>
+    <header id="head">
         <nav>
             <div class="container">
                 <ul class="menu">
-                    <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
+                    <li class="menu_item"><a href="#head" class="menu_link">Главная</a></li>
                     <li class="menu_item"><a href="#condit" class="menu_link">Со своим автомобилем</a></li>
-                    <li class="menu_item"><a href="#condit" class="menu_link"> На автомобиле компании</a></li>
+                    <li class="menu_item"><a href="#condit" class="menu_link">На автомобиле компании</a></li>
                     <li class="menu_item"><a href="#require" class="menu_link">Требования</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link"> Контакты</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
                 </ul>
             </div>
@@ -285,7 +285,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" id="require">
                     <div class="require_block require_block_nmb warning">
                         <div class="require_title">ТРЕБОВАНИЕ:</div>
                         <ul class="require_list">
@@ -379,5 +379,21 @@
 
     <div class="bottom_line"></div> 
     <script src="js/script.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+           $('a[href*=#]').bind('click', function(e) {
+            e.preventDefault();
+               
+            var target = $(this).attr("href");
+                    
+            $('html, body').stop().animate({ scrollTop: $(target).offset().top}, 500, function() {
+                 location.hash = target;
+            });
+                    
+            return false;
+           });
+        });
+        </script> -->
 </body>
 </html>
